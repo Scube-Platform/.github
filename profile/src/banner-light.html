@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--bg1:#F7F9FC;--bg2:#E9EEF6;--ink:#142846;--ink2:#4A5A73;--line:rgba(20,40,70,.07);--pill:#FFFFFF;--pillb:rgba(20,40,70,.12);--glow:rgba(255,207,75,.0)}
+body.dark{--bg1:#0A1426;--bg2:#142846;--ink:#F4F6FA;--ink2:#A9B6CC;--line:rgba(255,255,255,.06);--pill:rgba(255,255,255,.05);--pillb:rgba(255,255,255,.14);--glow:rgba(255,207,75,.22)}
+*{margin:0;box-sizing:border-box}
+body{width:1280px;height:460px;font-family:Pretendard,sans-serif;overflow:hidden}
+.c{position:relative;width:1280px;height:460px;background:radial-gradient(1200px 600px at 85% 30%,var(--bg2),var(--bg1));overflow:hidden}
+.grid{position:absolute;inset:0;opacity:1}
+.left{position:absolute;left:84px;top:58px;width:760px}
+.lock{height:40px;display:block}
+.eyebrow{margin-top:40px;font-size:15px;letter-spacing:.24em;font-weight:700;color:#5B6E8F}
+body.dark .eyebrow{color:#FFCF4B}
+h1{margin-top:12px;font-size:54px;line-height:1.14;letter-spacing:-.025em;font-weight:800;color:var(--ink)}
+p{margin-top:18px;font-size:19px;line-height:1.55;color:var(--ink2);letter-spacing:-.01em}
+.pills{margin-top:28px;display:flex;gap:10px}
+.pill{padding:9px 16px;border-radius:999px;background:var(--pill);border:1px solid var(--pillb);font-size:15px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+.pill i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#FFCF4B;margin-right:8px;vertical-align:2px;box-shadow:0 0 0 2px rgba(20,40,70,.85)}
+body.dark .pill i{box-shadow:none}
+.mark{position:absolute;right:110px;top:92px;width:270px;height:270px}
+.glow{position:absolute;right:60px;top:42px;width:370px;height:370px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 62%)}
+</style></head><body class="light"><div class="c">
+<svg class="grid" width="1280" height="460" viewBox="0 0 1280 460"><defs><pattern id="iso" width="56" height="32.33" patternUnits="userSpaceOnUse"><path d="M0 16.17 L28 0 L56 16.17 L28 32.33 Z" fill="none" stroke="var(--line)" stroke-width="1"/></pattern>
+<linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".55" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="1"/></linearGradient><mask id="m"><rect width="1280" height="460" fill="url(#fade)"/></mask></defs>
+<rect width="1280" height="460" fill="url(#iso)" mask="url(#m)"/></svg>
+<div class="glow"></div>
+<svg class="mark" viewBox="0 0 116 116">
+<path fill="#142846" d="M63.33 52.04L98.37 31.81Q100.53 30.56 98.37 29.31L61.46 8Q58 6 54.54 8L17.63 29.31Q15.47 30.56 17.63 31.81L52.67 52.04A8 8 0 0 1 63.33 52.04ZM50.17 56.37L15.13 36.14Q12.97 34.89 12.97 37.39L12.97 80Q12.97 84 16.43 86L53.33 107.31Q55.5 108.56 55.5 106.06L55.5 65.6A8 8 0 0 1 50.17 56.37ZM60.5 65.6L60.5 106.06Q60.5 108.56 62.67 107.31L99.57 86Q103.03 84 103.03 80L103.03 37.39Q103.03 34.89 100.87 36.14L65.83 56.37A8 8 0 0 1 60.5 65.6Z"/>
+<path fill="#FFCF4B" d="M50 58a8 8 0 1 0 16 0a8 8 0 1 0 -16 0Z"/>
+</svg>
+<div class="left">
+<svg class="lock" viewBox="12.97 0 335.15 116">
+<path fill="#142846" d="M63.33 52.04L98.37 31.81Q100.53 30.56 98.37 29.31L61.46 8Q58 6 54.54 8L17.63 29.31Q15.47 30.56 17.63 31.81L52.67 52.04A8 8 0 0 1 63.33 52.04ZM50.17 56.37L15.13 36.14Q12.97 34.89 12.97 37.39L12.97 80Q12.97 84 16.43 86L53.33 107.31Q55.5 108.56 55.5 106.06L55.5 65.6A8 8 0 0 1 50.17 56.37ZM60.5 65.6L60.5 106.06Q60.5 108.56 62.67 107.31L99.57 86Q103.03 84 103.03 80L103.03 37.39Q103.03 34.89 100.87 36.14L65.83 56.37A8 8 0 0 1 60.5 65.6Z"/>
+<path fill="#FFCF4B" d="M50 58a8 8 0 1 0 16 0a8 8 0 1 0 -16 0Z"/>
+<path fill="#142846" d="M153.38 30.69H162.38C162.25 22.69 155.62 17.12 145.62 17.12C135.75 17.12 128.5 22.56 128.5 30.81C128.5 37.44 133.19 41.25 140.81 43.12L145.75 44.31C150.69 45.56 153.5 47 153.5 50.06C153.5 53.44 150.31 55.75 145.38 55.75C140.38 55.75 136.75 53.44 136.44 48.88H127.31C127.56 58.56 134.56 63.62 145.5 63.62C156.5 63.62 163 58.38 163 50.06C163 42.5 157.19 38.56 149.44 36.81L145.38 35.81C141.5 34.94 138.06 33.44 138.12 30.19C138.19 27.19 140.81 25 145.56 25C150.12 25 153 27.12 153.38 30.69ZM202.38 33.5H211.88C210.62 23.12 202.75 17.12 192.31 17.12C180.38 17.12 171.25 25.62 171.25 40.38C171.25 55.12 180.19 63.62 192.31 63.62C203.81 63.62 210.81 56 211.88 47.62L202.38 47.56C201.44 52.44 197.62 55.31 192.44 55.31C185.5 55.31 180.81 50.12 180.81 40.38C180.81 30.88 185.44 25.44 192.5 25.44C197.75 25.44 201.62 28.5 202.38 33.5ZM249.44 17.75V46.38C249.44 51.56 245.81 55.38 240.12 55.38C234.5 55.38 230.81 51.56 230.81 46.38V17.75H221.44V47.12C221.44 57.06 228.88 63.62 240.12 63.62C251.38 63.62 258.88 57.06 258.88 47.12V17.75ZM269.5 63H288.69C298.94 63 304.31 57.69 304.31 50.5C304.31 43.81 299.5 39.75 294.38 39.5V39.06C299.06 38 302.5 34.69 302.5 29.38C302.5 22.56 297.5 17.75 287.5 17.75H269.5ZM286.81 55.25H278.88V43.12H287.06C291.69 43.12 294.56 45.81 294.56 49.62C294.56 53 292.25 55.25 286.81 55.25ZM286.12 36.69H278.88V25.38H286.31C290.62 25.38 293 27.62 293 30.88C293 34.5 290.06 36.69 286.12 36.69ZM313.25 63H343.69V55.25H322.62V44.25H342.06V36.5H322.62V25.5H343.62V17.75H313.25Z"/>
+<path fill="#5A6B85" d="M128.24 99H130.66V94.45H133.25C136.35 94.45 138.02 92.6 138.02 90.02C138.02 87.44 136.37 85.57 133.29 85.57H128.24ZM130.66 92.47V87.59H132.92C134.74 87.59 135.55 88.57 135.55 90.02C135.55 91.45 134.74 92.47 132.92 92.47ZM147.17 99H155.52V96.96H149.58V85.57H147.17ZM166.36 99 167.47 95.68H172.53L173.65 99H176.23L171.48 85.57H168.51L163.78 99ZM168.12 93.73 169.94 88.31H170.05L171.89 93.73ZM184.43 87.59H188.59V99H191V87.59H195.14V85.57H184.43ZM204.23 99H206.64V93.29H212.24V91.26H206.64V87.59H212.84V85.57H204.23ZM234.06 92.28C234.06 87.94 231.43 85.38 227.9 85.38C224.38 85.38 221.74 87.94 221.74 92.28C221.74 96.61 224.38 99.19 227.9 99.19C231.43 99.19 234.06 96.62 234.06 92.28ZM231.63 92.28C231.63 95.34 230.09 97.01 227.9 97.01C225.71 97.01 224.17 95.34 224.17 92.28C224.17 89.22 225.71 87.55 227.9 87.55C230.09 87.55 231.63 89.22 231.63 92.28ZM243.42 99H245.83V94.08H248.35L250.99 99H253.68L250.78 93.67C252.36 93.03 253.2 91.68 253.2 89.85C253.2 87.29 251.54 85.57 248.46 85.57H243.42ZM245.83 92.06V87.59H248.09C249.91 87.59 250.73 88.42 250.73 89.85C250.73 91.28 249.91 92.06 248.09 92.06ZM262.47 85.57V99H264.81V89.72H264.92L268.65 98.96H270.38L274.11 89.76H274.24V99H276.56V85.57H273.59L269.6 95.33H269.43L265.44 85.57Z"/>
+</svg>
+<div class="eyebrow">INDUSTRIAL SAFETY PLATFORM</div>
+<h1>현장의 모든 사람이<br>무사히 퇴근하도록</h1>
+<p>워치 · 위치 · 설비 신호를 하나로 묶어 위험을 판정하고,<br>1초 안에 작업자의 손목과 관제실에 알립니다.</p><div class="pills"><span class="pill"><i></i>Wear OS 워치</span><span class="pill"><i></i>iPhone · Android</span><span class="pill"><i></i>관제 대시보드</span><span class="pill"><i></i>Spring Boot 서버</span></div>
+</div>
+</div></body></html>
