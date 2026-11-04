@@ -49,8 +49,8 @@
 
 ```mermaid
 flowchart LR
-  W["⌚ 워치<br/>심박 · 산소포화도 · 가속도"]
-  T["📍 위치 태그 · 설비"]
+  W["⌚ 워치<br/>생체 · 움직임"]
+  T["📍 태그 · 설비"]
   P["📱 작업자 폰"]
 
   subgraph server["Interface — 서버"]
@@ -64,8 +64,8 @@ flowchart LR
   T --> I
 
   A == "실시간 연결 · 푸시" ==> O1["⌚ 손목"]
-  A ==> O2["📱 작업자 · 동료의 폰"]
-  A ==> O3["🖥 관제 대시보드"]
+  A ==> O2["📱 작업자 폰<br/>동료 폰"]
+  A ==> O3["🖥 관제실"]
 
   classDef core fill:#142846,stroke:#FFCF4B,stroke-width:1.5px,color:#FFFFFF
   class I,R,A core
